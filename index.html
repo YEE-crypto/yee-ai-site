@@ -135,7 +135,7 @@
     .metrics strong span { margin-left: 3px; color: var(--blue); font-size: 13px; letter-spacing: 0; }
     .metrics p { margin: 5px 0 0; color: #667085; font-size: 13px; }
 
-    .plans-section, .proof-section, .service-section, .contact-section { padding-top: 112px; }
+    .plans-section, .service-section, .contact-section { padding-top: 112px; }
     .section-heading { display: flex; justify-content: space-between; align-items: end; gap: 50px; margin-bottom: 44px; }
     .section-heading > p { max-width: 430px; margin: 0; color: var(--muted); font-size: 14px; line-height: 1.75; }
     .eyebrow { margin: 0 0 13px; color: var(--blue); font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 11px; font-weight: 750; letter-spacing: .18em; }
@@ -183,32 +183,6 @@
       font-weight: 650;
     }
     .featured > button { color: #fff; border-color: rgba(255, 255, 255, .18); background: rgba(255, 255, 255, .08); }
-
-    .proof-heading { margin-bottom: 32px; }
-    .proof-window {
-      overflow: hidden;
-      border-top: 1px solid var(--line);
-      border-bottom: 1px solid var(--line);
-      padding: 28px 0;
-      mask-image: linear-gradient(90deg, transparent, #000 5%, #000 95%, transparent);
-      -webkit-mask-image: linear-gradient(90deg, transparent, #000 5%, #000 95%, transparent);
-    }
-    .proof-track { width: max-content; display: flex; gap: 16px; animation: scrollProof 30s linear infinite; }
-    .proof-window:hover .proof-track { animation-play-state: paused; }
-    @keyframes scrollProof { from { transform: translateX(0); } to { transform: translateX(calc(-50% - 8px)); } }
-    .proof-card { width: 310px; height: 240px; flex: 0 0 auto; border: 1px solid var(--line); border-radius: 18px; padding: 17px; background: linear-gradient(145deg, #fff, #f8faff); }
-    .mock-toolbar { display: flex; gap: 5px; }
-    .mock-toolbar span { width: 6px; height: 6px; border-radius: 50%; background: #d8deea; }
-    .mock-content { display: flex; gap: 12px; margin-top: 22px; }
-    .mock-avatar { width: 40px; height: 40px; display: grid; place-items: center; border-radius: 13px; color: #fff; background: linear-gradient(145deg, #3157f6, #7992ff); font-weight: 800; }
-    .mock-lines { flex: 1; display: grid; gap: 6px; padding-top: 4px; }
-    .mock-lines b, .mock-lines i { display: block; border-radius: 99px; background: #e8edf7; }
-    .mock-lines b { width: 40%; height: 7px; }
-    .mock-lines i { width: 90%; height: 6px; }
-    .mock-lines i:last-child { width: 66%; }
-    .mock-order { display: flex; justify-content: space-between; margin-top: 24px; border-radius: 10px; padding: 13px; background: #f0f4ff; font-size: 12px; }
-    .mock-order strong { color: var(--blue); }
-    .proof-card > p { margin: 16px 0 0; color: #98a2b3; font-size: 10px; }
 
     .service-grid { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
     .service-grid article { padding: 36px 35px 42px 0; }
@@ -287,7 +261,7 @@
       .metrics article + article { padding-left: 14px; }
       .metrics strong { font-size: 24px; }
       .metrics p { font-size: 10px; }
-      .plans-section, .proof-section, .service-section, .contact-section { padding-top: 80px; }
+      .plans-section, .service-section, .contact-section { padding-top: 80px; }
       .section-heading { display: block; margin-bottom: 30px; }
       .section-heading > p { margin-top: 18px; }
       .plan-grid { grid-template-columns: 1fr; }
@@ -310,7 +284,6 @@
 
     @media (prefers-reduced-motion: reduce) {
       html { scroll-behavior: auto; }
-      .proof-track { animation: none; }
       .primary-button { transition: none; }
     }
   </style>
@@ -323,7 +296,6 @@
         <a class="brand" href="#top" aria-label="YEE AI 首页">YEE<span>AI</span></a>
         <div class="nav-links">
           <a href="#plans">产品价格</a>
-          <a href="#proof">成交记录</a>
           <a href="#contact">联系我</a>
         </div>
         <button class="nav-cta copy-wechat" type="button">微信咨询</button>
@@ -334,7 +306,7 @@
       <div class="hero-glow glow-one"></div>
       <div class="hero-glow glow-two"></div>
       <div class="hero-content">
-        <div class="identity-row" aria-label="个人标签"><span>04</span><i></i><span>创业者</span><i></i><span>广州</span></div>
+        <div class="identity-row" role="group" aria-label="个人标签"><span>04</span><i></i><span>创业者</span><i></i><span>广州</span></div>
         <h1>让 AI 订阅<br><em>更简单，更透明。</em></h1>
         <p class="hero-copy">提供 ChatGPT Plus、Pro 5X 与 Pro 20X 订阅协助服务。明码标价、及时响应，个人购买与批量合作都可以直接沟通。</p>
         <div class="hero-actions">
@@ -343,7 +315,7 @@
         </div>
       </div>
 
-      <div class="metrics" aria-label="服务数据">
+      <div class="metrics" role="group" aria-label="服务数据">
         <article><strong>100<span>+</span></strong><p>累计服务客户</p></article>
         <article><strong>30<span>min</span></strong><p>工作时间内响应</p></article>
         <article><strong>3<span>档</span></strong><p>价格公开透明</p></article>
@@ -379,25 +351,6 @@
           <p>适合重度使用、复杂任务与高强度工作流。</p>
           <button class="copy-wechat" type="button">微信咨询 <span aria-hidden="true">↗</span></button>
         </article>
-      </div>
-    </section>
-
-    <section class="section proof-section" id="proof">
-      <div class="section-heading proof-heading">
-        <div><p class="eyebrow">SERVICE RECORDS</p><h2>真实记录，更有说服力</h2></div>
-        <p>后续可替换为已遮挡客户隐私的闲鱼订单截图或录屏片段。</p>
-      </div>
-      <div class="proof-window">
-        <div class="proof-track">
-          <article class="proof-card"><div class="mock-toolbar"><span></span><span></span><span></span></div><div class="mock-content"><div class="mock-avatar">Y</div><div class="mock-lines"><b></b><i></i><i></i></div></div><div class="mock-order"><span>订单记录 01</span><strong>素材占位</strong></div><p>上传真实素材后替换 · 请先隐藏客户隐私</p></article>
-          <article class="proof-card"><div class="mock-toolbar"><span></span><span></span><span></span></div><div class="mock-content"><div class="mock-avatar">Y</div><div class="mock-lines"><b></b><i></i><i></i></div></div><div class="mock-order"><span>订单记录 02</span><strong>素材占位</strong></div><p>上传真实素材后替换 · 请先隐藏客户隐私</p></article>
-          <article class="proof-card"><div class="mock-toolbar"><span></span><span></span><span></span></div><div class="mock-content"><div class="mock-avatar">Y</div><div class="mock-lines"><b></b><i></i><i></i></div></div><div class="mock-order"><span>订单记录 03</span><strong>素材占位</strong></div><p>上传真实素材后替换 · 请先隐藏客户隐私</p></article>
-          <article class="proof-card"><div class="mock-toolbar"><span></span><span></span><span></span></div><div class="mock-content"><div class="mock-avatar">Y</div><div class="mock-lines"><b></b><i></i><i></i></div></div><div class="mock-order"><span>订单记录 04</span><strong>素材占位</strong></div><p>上传真实素材后替换 · 请先隐藏客户隐私</p></article>
-          <article class="proof-card" aria-hidden="true"><div class="mock-toolbar"><span></span><span></span><span></span></div><div class="mock-content"><div class="mock-avatar">Y</div><div class="mock-lines"><b></b><i></i><i></i></div></div><div class="mock-order"><span>订单记录 01</span><strong>素材占位</strong></div><p>上传真实素材后替换 · 请先隐藏客户隐私</p></article>
-          <article class="proof-card" aria-hidden="true"><div class="mock-toolbar"><span></span><span></span><span></span></div><div class="mock-content"><div class="mock-avatar">Y</div><div class="mock-lines"><b></b><i></i><i></i></div></div><div class="mock-order"><span>订单记录 02</span><strong>素材占位</strong></div><p>上传真实素材后替换 · 请先隐藏客户隐私</p></article>
-          <article class="proof-card" aria-hidden="true"><div class="mock-toolbar"><span></span><span></span><span></span></div><div class="mock-content"><div class="mock-avatar">Y</div><div class="mock-lines"><b></b><i></i><i></i></div></div><div class="mock-order"><span>订单记录 03</span><strong>素材占位</strong></div><p>上传真实素材后替换 · 请先隐藏客户隐私</p></article>
-          <article class="proof-card" aria-hidden="true"><div class="mock-toolbar"><span></span><span></span><span></span></div><div class="mock-content"><div class="mock-avatar">Y</div><div class="mock-lines"><b></b><i></i><i></i></div></div><div class="mock-order"><span>订单记录 04</span><strong>素材占位</strong></div><p>上传真实素材后替换 · 请先隐藏客户隐私</p></article>
-        </div>
       </div>
     </section>
 
