@@ -3,111 +3,80 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="YEE 的个人互联网主页，记录 AI 产品实践、稳定币研究与正在构建的项目。">
-  <meta name="theme-color" content="#f4f4ef">
-  <meta property="og:title" content="YEE｜Personal Hub">
-  <meta property="og:description" content="AI 产品、稳定币研究与个人项目。">
+  <meta name="description" content="我是 YEE，04 年创业实践者，坐标广州。探索 AI 产品、稳定币研究与个人项目，也在这里分享我的 AI 服务与卡网入口。">
+  <meta name="theme-color" content="#090d12">
+  <meta property="og:title" content="YEE｜保持好奇，持续构建。">
+  <meta property="og:description" content="AI 产品与服务、稳定币研究，以及一个持续生长的个人世界。">
   <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yee-ai-site.pages.dev/">
+  <link rel="canonical" href="https://yee-ai-site.pages.dev/">
+  <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/css/styles.css?v=20261112">
   <title>YEE｜Personal Hub</title>
-  <link rel="stylesheet" href="assets/css/styles.css">
 </head>
-<body>
-  <nav class="site-nav" aria-label="主导航">
-    <div class="nav-inner shell">
-      <a class="wordmark" href="#top" aria-label="YEE 首页">YEE<small>Personal Hub</small></a>
-      <div class="nav-links">
-        <a href="#focus">当前关注</a>
-        <a href="#about">关于我</a>
-        <a href="#contact">联系</a>
-      </div>
-      <a class="nav-action" href="#focus">探索项目 <span aria-hidden="true">↘</span></a>
-    </div>
-  </nav>
-
-  <main>
-    <section class="hero shell" id="top">
-      <div class="hero-main reveal">
-        <p class="kicker">04 年创业实践者 · 广州</p>
-        <h1>把兴趣变成项目，<br>把项目变成<em>长期积累。</em></h1>
-        <p class="hero-copy">我关注 AI 产品、稳定币、互联网业务与个人品牌。这里不是一份传统简历，而是我正在做什么、研究什么，以及未来想持续构建什么。</p>
+<body class="home">
+  <a class="skip-link" href="#main-content">跳转到正文</a>
+  <header class="site-nav">
+    <nav class="nav-inner shell" aria-label="主导航">
+      <a class="wordmark" href="/" aria-label="YEE 个人主页">YEE<span class="wordmark-dot">.</span><small>PERSONAL HUB</small></a>
+      <div class="nav-links"><a href="#focus">探索项目</a><a href="#about">关于我</a><a href="#contact">联系</a></div>
+      <a class="nav-action" href="https://faka.dawnform.top/" target="_blank" rel="noopener noreferrer">进入卡网 <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+  <main id="main-content">
+    <section class="home-hero shell" aria-labelledby="hero-title">
+      <div class="hero-main">
+        <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span>04 年创业实践者 <span class="eyebrow-divider">/</span> 广州</p>
+        <p class="hero-greeting">HELLO, I'M YEE</p>
+        <h1 id="hero-title">保持好奇，<br><span>持续构建。</span></h1>
+        <p class="home-hero-copy">探索 AI，研究新机会，把想法变成真实的项目。<br class="desktop-break">这里是我的个人主页，也是通往我正在做的事情的入口。</p>
         <div class="hero-actions">
-          <a class="button-primary" href="#focus">看看我在做什么 <span aria-hidden="true">↓</span></a>
-          <button class="button-secondary copy-wechat" type="button">联系我 <span aria-hidden="true">↗</span></button>
+          <a class="button-primary" href="https://faka.dawnform.top/" target="_blank" rel="noopener noreferrer">进入我的卡网 <span aria-hidden="true">↗</span></a>
+          <a class="button-secondary" href="#focus">探索我的项目 <span aria-hidden="true">↓</span></a>
         </div>
+        <p class="hero-footnote">AI 产品与服务 <span>·</span> 选购、咨询，从这里开始</p>
       </div>
-
-      <aside class="now-card reveal" aria-label="当前状态">
-        <div class="now-top"><span>NOW</span><span>2026 / Ongoing</span></div>
-        <div class="now-list">
-          <div class="now-item"><span>01</span><div><strong>AI 产品服务</strong><p>把复杂的订阅选择和使用流程讲清楚。</p></div></div>
-          <div class="now-item"><span>02</span><div><strong>稳定币研究</strong><p>实践收益策略，同时重视流动性与风险。</p></div></div>
-          <div class="now-item"><span>03</span><div><strong>个人品牌建设</strong><p>持续沉淀内容、项目与互联网资产。</p></div></div>
+      <div class="hero-art">
+        <div class="particle-stage" aria-hidden="true">
+          <div class="orb-fallback"></div>
+          <canvas id="particle-canvas"></canvas>
+          <div class="orb-center"><span>Y</span><small>IDEAS INTO REALITY</small></div>
+          <span class="orb-label label-ai"><i></i>AI</span>
+          <span class="orb-label label-build"><i></i>BUILD</span>
+          <span class="orb-label label-explore"><i></i>EXPLORE</span>
         </div>
-      </aside>
-    </section>
-
-    <section class="section shell" id="focus">
-      <div class="section-head reveal">
-        <div><p class="section-index">01 / WHAT I'M BUILDING</p><h2>当前关注</h2></div>
-        <p>先把两个正在实践的方向做扎实。以后这里会继续增加 AI + 自媒体、创业项目、文章与研究记录。</p>
-      </div>
-
-      <div class="focus-grid">
-        <a class="focus-card blue reveal" href="ai/" aria-label="进入 AI 产品与服务页面">
-          <div class="focus-meta"><span>AI Services</span><span>01</span></div>
-          <div class="focus-visual" aria-hidden="true"><div class="orbit"><span>AI</span></div></div>
-          <h3>AI 产品与服务</h3>
-          <p>ChatGPT 订阅、产品选择与使用支持。价格公开，购买前把交付和售后范围说清楚。</p>
-          <div class="card-link">查看产品与价格 <span>→</span></div>
-        </a>
-
-        <a class="focus-card reveal" href="stablecoin/" aria-label="进入稳定币与投资研究页面">
-          <div class="focus-meta"><span>Stablecoin Research</span><span>02</span></div>
-          <div class="focus-visual" aria-hidden="true"><div class="coin-stack"><i></i><i></i></div></div>
-          <h3>稳定币与投资研究</h3>
-          <p>记录稳定币收益策略、现金管理、平台研究与风险判断，不包装成固定收益。</p>
-          <div class="card-link">查看研究方向 <span>→</span></div>
-        </a>
+        <div class="art-caption"><span>A LITTLE CURIOSITY. ENDLESS POSSIBILITIES.</span><button id="motion-toggle" type="button" aria-pressed="false" aria-controls="particle-canvas" hidden>暂停动效</button></div>
       </div>
     </section>
-
-    <section class="section shell" id="about">
-      <div class="about-grid">
-        <div class="split-copy reveal">
-          <p class="section-index">02 / ABOUT</p>
-          <h2>关于我</h2>
-          <p>我来自广州，目前主要实践 AI 产品服务、互联网获客和个人项目。相比只给自己贴一个行业标签，我更关心如何把新工具、新市场和真实需求连接起来。</p>
-        </div>
-        <div class="timeline reveal" aria-label="个人项目轨迹">
-          <article><time>NOW</time><div><h3>Personal Hub</h3><p>把分散的业务、研究与内容整理成可以长期更新的个人主页。</p></div></article>
-          <article><time>2026</time><div><h3>AI 产品服务</h3><p>累计服务约 100 位用户，持续优化产品说明、交付与售后体验。</p></div></article>
-          <article><time>ONGOING</time><div><h3>稳定币研究</h3><p>围绕收益、现金管理、平台风险和资金安全建立自己的判断框架。</p></div></article>
-        </div>
+    <div class="interest-strip shell" aria-label="关注方向"><span>THINGS I CARE ABOUT</span><p>AI & TOOLS <i>/</i> STABLECOIN <i>/</i> INDEPENDENT PROJECTS</p><a href="#focus" aria-label="向下查看项目">↓</a></div>
+    <section class="section shell" id="focus" aria-labelledby="focus-title">
+      <div class="section-head reveal"><div><p class="section-index">01 — EXPLORE</p><h2 id="focus-title">我正在做的事<span class="accent">。</span></h2></div><p>把关注变成实践。<br>从一个工具、一项服务、一次研究开始。</p></div>
+      <div class="project-grid">
+        <article class="project-card project-ai reveal">
+          <div class="project-top"><span class="project-category"><span class="project-icon" aria-hidden="true">✳</span>AI PRODUCTS & SERVICES</span><span class="project-number">01</span></div>
+          <div class="project-art ai-art" aria-hidden="true"><span class="ai-art-line"></span><span class="ai-letter">AI<span>+</span></span><span class="mini-tag tag-one">TOOLS</span><span class="mini-tag tag-two">SERVICES</span></div>
+          <div class="project-copy"><h3>好用的 AI，从这里开始。</h3><p>AI 订阅与相关产品服务。前往卡网查看在售商品、最新价格与交付说明，有疑问也可以直接找我。</p></div>
+          <div class="project-links"><a class="text-link" href="https://faka.dawnform.top/" target="_blank" rel="noopener noreferrer">前往卡网选购 <span aria-hidden="true">↗</span></a><a class="subtle-link" href="/ai/">服务介绍 <span aria-hidden="true">→</span></a></div>
+        </article>
+        <article class="project-card project-research reveal">
+          <div class="project-top"><span class="project-category"><span class="project-icon" aria-hidden="true">◎</span>STABLECOIN RESEARCH</span><span class="project-number">02</span></div>
+          <div class="project-art research-art" aria-hidden="true"><div class="research-orbit orbit-one"></div><div class="research-orbit orbit-two"></div><div class="research-core">$</div><span class="research-dot"></span><span class="mini-tag tag-three">RISK FIRST</span></div>
+          <div class="project-copy"><h3>先理解风险，再研究收益。</h3><p>记录稳定币、现金管理与投资研究。关注收益从哪里来，也关注流动性、平台风险与退出方式。</p></div>
+          <div class="project-links"><a class="text-link" href="/stablecoin/">查看研究与记录 <span aria-hidden="true">↗</span></a><span class="project-note">个人实践 · 非投资建议</span></div>
+        </article>
       </div>
     </section>
-
-    <section class="section shell" id="contact">
-      <div class="contact-panel reveal">
-        <div>
-          <p class="section-index">03 / CONTACT</p>
-          <h2>有产品需求，<br>或者想聊聊项目？</h2>
-          <p>告诉我你关注的方向。我会尽量直接、清楚地回复，不绕弯子。</p>
-        </div>
-        <div class="contact-buttons">
-          <button class="copy-wechat" type="button"><span>微信 · Xiafa123451</span><span>复制</span></button>
-          <a href="https://x.com/FUNX1001" target="_blank" rel="noopener noreferrer"><span>X · @FUNX1001</span><span>↗</span></a>
-        </div>
-      </div>
+    <section class="section shell about-section" id="about" aria-labelledby="about-title">
+      <div class="about-intro reveal"><p class="section-index">02 — A LITTLE ABOUT ME</p><h2 id="about-title">想法很多，<br>也在认真落地。</h2><p>我是 YEE，来自广州。现在主要实践 AI 产品服务、互联网业务和个人项目。</p><p>比起给自己贴上某个标签，我更喜欢亲手试一试：发现真实需求，做一点有用的东西，再慢慢把它做好。</p><a class="subtle-link" href="https://x.com/FUNX1001" target="_blank" rel="noopener noreferrer">在 X 上认识我 <span aria-hidden="true">↗</span></a></div>
+      <div class="now-panel reveal"><div class="now-panel-head"><span class="section-index">CURRENTLY EXPLORING</span><span class="status-dot" aria-hidden="true"></span></div><article><span>01</span><div><h3>让 AI 服务更简单</h3><p>持续完善产品说明、购买入口与使用支持。</p></div><span class="now-arrow" aria-hidden="true">↗</span></article><article><span>02</span><div><h3>建立自己的研究框架</h3><p>关注稳定币、现金管理与风险判断。</p></div><span class="now-arrow" aria-hidden="true">↗</span></article><article><span>03</span><div><h3>构建长期的个人项目</h3><p>把分散的想法与实践，积累在这个小小的主页。</p></div><span class="now-arrow" aria-hidden="true">↗</span></article><div class="now-panel-foot"><span>LEARN. BUILD. REPEAT.</span><span>持续更新中</span></div></div>
+    </section>
+    <section class="section shell contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="contact-panel reveal"><div><p class="section-index">03 — LET'S CONNECT</p><h2 id="contact-title">下一次交流，<br>也许就是新的开始。</h2><p>选购 AI 产品，交流使用体验，或者聊聊新想法。</p><a class="button-primary" href="https://faka.dawnform.top/" target="_blank" rel="noopener noreferrer">前往我的卡网 <span aria-hidden="true">↗</span></a></div><div class="contact-buttons"><button class="copy-wechat" type="button"><span><small>WECHAT</small> Xiafa123451</span><span>复制 ↗</span></button><a href="https://x.com/FUNX1001" target="_blank" rel="noopener noreferrer"><span><small>X / TWITTER</small> @FUNX1001</span><span aria-hidden="true">↗</span></a></div></div>
     </section>
   </main>
-
-  <footer class="site-footer shell">
-    <a class="wordmark" href="#top">YEE<small>Personal Hub</small></a>
-    <p>个人实践、项目记录与研究观点。页面内容会持续更新。</p>
-    <span>© 2026 YEE</span>
-  </footer>
-
+  <footer class="site-footer shell"><a class="wordmark" href="/">YEE<span class="wordmark-dot">.</span><small>PERSONAL HUB</small></a><p>保持好奇，持续构建。<span class="footer-location">Made with curiosity · 广州</span></p><span>© 2026 YEE</span></footer>
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
-  <script src="assets/js/main.js"></script>
+  <script src="/assets/js/main.js?v=20261112" defer></script>
+  <script src="/assets/js/particles.js?v=20261112" defer></script>
 </body>
 </html>
