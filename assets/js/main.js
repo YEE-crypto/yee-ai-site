@@ -21,8 +21,9 @@ async function copyWechat() {
       input.style.opacity = "0";
       document.body.appendChild(input);
       input.select();
-      document.execCommand("copy");
+      const copied = document.execCommand("copy");
       input.remove();
+      if (!copied) throw new Error("Clipboard unavailable");
     }
     showToast(`微信号已复制：${wechat}`);
   } catch (error) {
