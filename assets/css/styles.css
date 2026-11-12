@@ -210,6 +210,7 @@ button:focus-visible, a:focus-visible { outline: 2px solid var(--accent); outlin
   .plan-card { padding: 22px; }
 }
 @media (max-width: 760px) {
+  html { scroll-padding-top: 125px; }
   .shell { width: calc(100% - 40px); }
   .nav-inner { min-height: 72px; gap: 15px; flex-wrap: wrap; padding-block: 14px; }
   .wordmark { font-size: 26px; }
@@ -271,6 +272,7 @@ button:focus-visible, a:focus-visible { outline: 2px solid var(--accent); outlin
   .kicker { line-height: 1.8; font-size: 8px; }
 }
 @media (max-width: 360px) {
+  .page-hero h1 { font-size: 31px; }
   .shell { width: calc(100% - 32px); }
   .wordmark small { display: none; }
   .hero-actions { align-items: stretch; flex-direction: column; }
